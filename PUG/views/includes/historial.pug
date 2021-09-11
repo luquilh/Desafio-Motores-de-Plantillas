@@ -1,0 +1,27 @@
+h2(style="color:crimson;") Historial
+
+- const hayProductos= (productos.length > 0)
+
+if hayProductos
+    div(class="table-responsive")
+        table(class="table table-dark")
+            thead
+                tr(style="color: yellow;")
+                    th Producto
+                    th Precio
+                    th Foto
+            tbody
+                each producto in productos
+            
+                    tr
+                        td=producto.title
+                        td=producto.price
+                        td
+                            img(src=producto.thumbnail, width="40", eight="30")
+            
+                        
+        
+        
+    
+else
+    h3(class="alert alert-danger") No hay productos
